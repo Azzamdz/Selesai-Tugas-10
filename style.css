@@ -1,0 +1,104 @@
+body {
+    background-color: #FEF6E3;
+    padding: 40px 64px;
+    font-family: sans-serif;
+    height: 100vh;
+
+    h1 {
+        font-family: "Michroma", sans-serif;
+        font-size: 40px;
+        color: #3348A1;
+    }
+}
+    
+button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+
+
+    .kiri {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        object-fit: cover;
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            width: 450px;
+
+            a {
+                display: flex;
+                gap: 10px;
+                color: white;
+                border-radius: 8px;
+                background-color: #E4543A;
+                width: fit-content;
+                padding: 10px;
+            }
+        }
+
+        h1 {
+            width: 405px;
+        }
+
+        p {
+            width: 405px;
+        }
+    }
+
+    .kanan {
+        .img-motor {
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .img-logo {
+            width: 400px;
+            height: 400px;
+        }
+    }
+    
+    
+}
+
+.tombol {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.tombol-balik {
+    background-color: black;
+}
+
+
+@media screen and (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+    }
+
+    .img-motor {
+        width: 351px;
+    }
+
+}
